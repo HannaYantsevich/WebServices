@@ -41,6 +41,6 @@ public class RestAssuredTest {
         ResponseBody<?> responseBody = response.getBody();
         User[] users = responseBody.as(User[].class);
         System.out.println(users.length);
-        Assert.assertEquals(users.length, 10);
+       Assert.assertEquals(users.length, 10);
     }
 }
